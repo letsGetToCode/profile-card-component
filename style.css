@@ -1,0 +1,37 @@
+:root {
+  --clr-dark-cyan:  hsl(185, 75%, 39%);
+  --clr-dark-blue:  hsl(229, 23%, 23%);
+  --clr-gray-blue: hsl(227, 10%, 46%);
+
+  --clr-dark-gray: hsl(0, 0%, 59%);
+
+  font-size: 18px;
+  font-family:  "Kumbh Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-dark-cyan);
+}
+
+.top-bg {
+  transform: translate(-300px, -600px);
+}
+
+.card-container {
+  border: 1px solid red;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
