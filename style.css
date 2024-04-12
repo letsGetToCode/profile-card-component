@@ -117,11 +117,14 @@ body {
 .body-bottom-bg {
   position: absolute;
   translate: 50% 50%;
+  z-index: -1;
 }
 
 .attribution { 
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
+  margin-top: -70px; 
+  letter-spacing: 0.6px;
 }
 
 .attribution a { 
