@@ -4,27 +4,119 @@
   --clr-gray-blue: hsl(227, 10%, 46%);
 
   --clr-dark-gray: hsl(0, 0%, 59%);
-
-  font-size: 18px;
-  font-family:  "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 body {
   background-color: var(--clr-dark-cyan);
-}
-
-.top-bg {
-  transform: translate(-300px, -600px);
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .card-container {
-  border: 1px solid red;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-top-bg { 
+  transform: translate(-50%, -50%);  
+  position: absolute;
+}
+
+.card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0px 5px 40px var(--clr-gray-blue);
+}
+
+.card .bubbles {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card .picture {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  translate: 0 -50%;
+  margin-bottom: -40px;
+}
+
+.card .user-information {
+  text-align: center;
+}
+
+.user-information h1 {
+  font-weight: 700;
+  color: var(--clr-dark-blue);
+  margin-bottom: 8px;
+}
+
+.user-information span {
+  color: var(--clr-gray-blue);
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.card h3 {
+  color: var(--clr-dark-gray);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.divider {
+  width: 100%;
+  border-top: 2px solid var(--clr-dark-gray);
+  opacity: 0.1;
+  margin-bottom: 16px;
+}
+
+.card-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-weight: 700;
+  color: var(--clr-dark-blue);
+}
+
+.stats {
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--clr-gray-blue);
+}
+
+.body-bottom-bg {
+  position: absolute;
+  translate: 50% 50%;
 }
 
 .attribution { 
@@ -34,4 +126,5 @@ body {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+  font-size: 11px;
 }
